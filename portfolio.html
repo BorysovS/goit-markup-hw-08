@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <nav class="site-nav">
           <a href="./index.html" class="logo site-nav__logo"
             >Web<span class="logo site-nav__logo--theme-light">Studio</span></a
@@ -34,6 +34,11 @@
             <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="contacts-nav list">
           <li class="contacts-nav__item">
             <a class="contect-nav__link link" href="mailto:info@devstudio.com">
@@ -47,10 +52,34 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu-close-btn__icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-list__item"><a href="./index.html" class="mobile-nav-list__link link current">Студія</a></li>
+          <li class="mobile-nav-list__item"><a href="./portfolio.html" class="mobile-nav-list__link link">Портфоліо</a></li>
+          <li class="mobile-nav-list__item"><a href="" class="mobile-nav-list__link link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item"><a class="mobile-contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="mobile-contacts__item"><a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-social-network list">
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Instagram</a></li>
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Twitter</a></li>
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Facebook</a></li>
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Linkedin</a></li>
+        </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="main-section section">
-        <div class="container">
+        <div class="container main-section__container">
           <h1 class="visually-hidden">Наше портфоліо</h1>
           <ul class="works-menu">
             <li class="menu-item">
@@ -73,14 +102,21 @@
         <div class="container">
           <ul class="works-content">
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf1-desktop.webp 1x, ./images/pf1-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf1-desktop.jpg 1x, ./images/pf1-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf1-tablet.webp 1x, ./images/pf1-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf1-tablet.jpg 1x, ./images/pf1-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf1-mobile.webp 1x, ./images/pf1-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf1-mobile.jpg 1x, ./images/pf1-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p1.jpg"
+                src="./images/pf1-mobile.jpg"
                 alt="ноутбук"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -90,14 +126,21 @@
             </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf2-desktop.webp 1x, ./images/pf2-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf2-desktop.jpg 1x, ./images/pf2-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf2-tablet.webp 1x, ./images/pf2-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf2-tablet.jpg 1x, ./images/pf2-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf2-mobile.webp 1x, ./images/pf2-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf2-mobile.jpg 1x, ./images/pf2-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p2.jpg"
+                src="./images/pf2-mobile.jpg"
                 alt="два баскетболісти з мячем"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -109,14 +152,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf3-desktop.webp 1x, ./images/pf3-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf3-desktop.jpg 1x, ./images/pf3-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf3-tablet.webp 1x, ./images/pf3-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf3-tablet.jpg 1x, ./images/pf3-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf3-mobile.webp 1x, ./images/pf3-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf3-mobile.jpg 1x, ./images/pf3-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p3.jpg"
+                src="./images/pf3-mobile.jpg"
                 alt="лого ресторану"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -128,14 +178,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf4-desktop.webp 1x, ./images/pf4-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf4-desktop.jpg 1x, ./images/pf4-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf4-tablet.webp 1x, ./images/pf4-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf4-tablet.jpg 1x, ./images/pf4-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf4-mobile.webp 1x, ./images/pf4-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf4-mobile.jpg 1x, ./images/pf4-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p4.jpg"
+                src="./images/pf4-mobile.jpg"
                 alt="навушники"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -147,14 +204,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf5-desktop.webp 1x, ./images/pf5-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf5-desktop.jpg 1x, ./images/pf5-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf5-tablet.webp 1x, ./images/pf5-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf5-tablet.jpg 1x, ./images/pf5-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf5-mobile.webp 1x, ./images/pf5-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf5-mobile.jpg 1x, ./images/pf5-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p5.jpg"
+                src="./images/pf5-mobile.jpg"
                 alt="дві коробки"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -166,14 +230,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf6-desktop.webp 1x, ./images/pf6-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf6-desktop.jpg 1x, ./images/pf6-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf6-tablet.webp 1x, ./images/pf6-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf6-tablet.jpg 1x, ./images/pf6-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf6-mobile.webp 1x, ./images/pf6-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf6-mobile.jpg 1x, ./images/pf6-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p6.jpg"
+                src="./images/pf6-mobile.jpg"
                 alt="компютер єпл"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -185,14 +256,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf7-desktop.webp 1x, ./images/pf7-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf7-desktop.jpg 1x, ./images/pf7-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf7-tablet.webp 1x, ./images/pf7-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf7-tablet.jpg 1x, ./images/pf7-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf7-mobile.webp 1x, ./images/pf7-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf7-mobile.jpg 1x, ./images/pf7-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p7.jpg"
+                src="./images/pf7-mobile.jpg"
                 alt="розгонута книга"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -204,14 +282,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf8-desktop.webp 1x, ./images/pf8-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf8-desktop.jpg 1x, ./images/pf8-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf8-tablet.webp 1x, ./images/pf8-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf8-tablet.jpg 1x, ./images/pf8-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf8-mobile.webp 1x, ./images/pf8-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf8-mobile.jpg 1x, ./images/pf8-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p8.jpg"
+                src="./images/pf8-mobile.jpg"
                 alt="бірка з лейблом"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -223,14 +308,21 @@
               </a>
             </li>
             <li class="work-content-item">
-              <a href="#" class="work-content link">
-              <div class="work-img-wrapper"><img
+              <a href="#" class="work-content__link link">
+              <div class="work-img-wrapper">
+                <picture>
+                <source srcset="./images/pf9-desktop.webp 1x, ./images/pf9-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf9-desktop.jpg 1x, ./images/pf9-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf9-tablet.webp 1x, ./images/pf9-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf9-tablet.jpg 1x, ./images/pf9-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf9-mobile.webp 1x, ./images/pf9-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf9-mobile.jpg 1x, ./images/pf9-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
                 class="work-picture"
-                src="./images/p9.jpg"
+                src="./images/pf9-mobile.jpg"
                 alt="ноутбук на якому печатають"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="text-block">
@@ -255,7 +347,7 @@
           <ul class="footer-nav__list list">
             <li class="footer-nav__item">
               <a
-                class="footer-nav__link link"
+                class="footer-nav__link footer-nav__link-adress link"
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -321,5 +413,6 @@
           </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

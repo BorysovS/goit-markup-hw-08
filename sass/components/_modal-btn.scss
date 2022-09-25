@@ -1,4 +1,8 @@
 .modal-btn {
+
+    @media screen and (max-width:1199px) {
+       width: 200px;
+    }
     display: inline-block;
     min-width: 216px;
     padding: 10px 32px;
