@@ -18,7 +18,7 @@
  </head>
   <body>
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <nav class="site-nav">
           <a href="./index.html" class="logo site-nav__logo"
             >Web<span class="logo site-nav__logo--theme-light">Studio</span></a
@@ -33,6 +33,11 @@
             <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="contacts-nav list">
           <li class="contacts-nav__item">
             <a class="contect-nav__link link" href="mailto:info@devstudio.com">
@@ -46,6 +51,30 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu-close-btn__icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-list__item"><a href="./index.html" class="mobile-nav-list__link link current">Студія</a></li>
+          <li class="mobile-nav-list__item"><a href="./portfolio.html" class="mobile-nav-list__link link">Портфоліо</a></li>
+          <li class="mobile-nav-list__item"><a href="" class="mobile-nav-list__link link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item"><a class="mobile-contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="mobile-contacts__item"><a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-social-network list">
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Instagram</a></li>
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Twitter</a></li>
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Facebook</a></li>
+          <li class="mobile-social-network__item"><a class="mobile-social-network__link link" href="#">Linkedin</a></li>
+        </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section hero-section">
@@ -54,7 +83,7 @@
           <button class="modal-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <section class="section features">
+      <!-- <section class="section features">
         <div class="container">
           <h2 class="features__title visually-hidden">Наші переваги</h2>
           <ul class="features__list list">
@@ -107,9 +136,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="working-section section">
+      <!-- <section class="working-section section">
         <div class="container">
           <h2 class="working-section__title">Чим ми займаємося</h2>
           <ul class="works-list list">
@@ -145,9 +174,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="team-section section">
+      <!-- <section class="team-section section">
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-list list">
@@ -301,9 +330,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients-list list">
@@ -351,11 +380,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> --> -->
     </main>
 
     <footer class="footer-section">
-      <div class="container page-footer">
+      <!-- <div class="container page-footer">
         <div class="footer-navigation">
         <div class="logo footer-navigation__logo">
           <a href="./index.html" class="logo">
@@ -430,9 +459,9 @@
             </button>
             </div>
           </form>
-      </div>
+      </div> -->
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-close-icon" width="18" height="18">
@@ -478,7 +507,8 @@
           <button class="modal-form-btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
