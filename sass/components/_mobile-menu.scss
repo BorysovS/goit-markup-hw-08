@@ -24,7 +24,9 @@
         .mobile-menu__container {
             max-width: 480px;
             position: relative;
-            padding: 48px 40px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            padding-left: 40px;
         }
         
         .mobile-menu__close-btn {
