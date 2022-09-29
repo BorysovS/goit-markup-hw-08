@@ -91,6 +91,7 @@
     .works-content {
         display: flex;
         flex-wrap: wrap;
+        flex-grow: 1;
         gap: 30px;
         list-style: none;
         }
@@ -112,7 +113,11 @@
 @media screen and (min-width: 1200px) {
     .work-content-item {
         flex-basis: calc((100% - 60px) / 3);
-}
+    }
+
+    .works-menu {
+        margin-bottom: 50px;
+    }
 }
 
 

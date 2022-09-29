@@ -48,9 +48,6 @@
             height: 40px;
         }
 
-        .mobile-nav-list {
-            margin-bottom: 202px;
-        }
         
         .mobile-nav-list__item {
             // margin-bottom: 32px;
@@ -119,6 +116,7 @@
 
         .mobile-social-network {
             display: flex;
+            flex-wrap: wrap;
         }
 
         .mobile-social-network__item:not(:last-child) {
